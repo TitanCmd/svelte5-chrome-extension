@@ -1,15 +1,15 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
-  let count = $state(0)
+  let count = $state(0);
 
   function increment() {
     count++;
-    console.log('increment', count);
+    console.log("increment", count);
   }
 
   onMount(() => {
-    console.log('MainContent mounted');
+    console.log("MainContent mounted");
   });
 </script>
 

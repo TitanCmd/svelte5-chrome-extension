@@ -12,7 +12,7 @@ print_status "===================================="
 # Clean and build production version
 ./scripts/clean.sh
 print_status "🚀 Building for production..."
-pnpm run build --mode production
+bun run build --mode production
 print_success "Production build complete!"
 
 # Create extension.zip

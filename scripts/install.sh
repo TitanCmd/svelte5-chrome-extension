@@ -7,5 +7,5 @@ set -e
 source "$(dirname "$0")/common.sh"
 
 print_status "Installing dependencies..."
-pnpm install
+bun install
 print_success "Dependencies installed!"

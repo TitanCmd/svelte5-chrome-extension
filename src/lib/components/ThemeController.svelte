@@ -1,51 +1,46 @@
 <script lang="ts">
-  import {
-    theme,
-    setTheme,
-    AVAILABLE_THEMES,
-    type Theme,
-  } from '../stores/theme';
-  import { Palette, Check } from '../icons';
-  import Icon from './Icon.svelte';
+  import { theme, setTheme, type Theme } from "../stores/theme";
+  import { Palette, Check } from "../icons";
+  import Icon from "./Icon.svelte";
 
   let showThemeModal = $state(false);
 
   const themeGroups = {
-    'Light Themes': [
-      'light',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'retro',
-      'garden',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'cmyk',
-      'autumn',
-      'acid',
-      'lemonade',
-      'winter',
+    "Light Themes": [
+      "light",
+      "cupcake",
+      "bumblebee",
+      "emerald",
+      "corporate",
+      "retro",
+      "garden",
+      "lofi",
+      "pastel",
+      "fantasy",
+      "wireframe",
+      "cmyk",
+      "autumn",
+      "acid",
+      "lemonade",
+      "winter",
     ],
-    'Dark Themes': [
-      'dark',
-      'synthwave',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'forest',
-      'aqua',
-      'black',
-      'luxury',
-      'dracula',
-      'business',
-      'night',
-      'coffee',
-      'dim',
-      'nord',
-      'sunset',
+    "Dark Themes": [
+      "dark",
+      "synthwave",
+      "cyberpunk",
+      "valentine",
+      "halloween",
+      "forest",
+      "aqua",
+      "black",
+      "luxury",
+      "dracula",
+      "business",
+      "night",
+      "coffee",
+      "dim",
+      "nord",
+      "sunset",
     ],
   };
 

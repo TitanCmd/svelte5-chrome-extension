@@ -9,7 +9,7 @@ source "$(dirname "$0")/common.sh"
 echo "📊 Extension Status"
 echo "===================="
 echo "Node version: $(node --version)"
-echo "pnpm version: $(pnpm --version)"
+echo "bun version: $(bun --version)"
 echo ""
 
 echo "Package info:"

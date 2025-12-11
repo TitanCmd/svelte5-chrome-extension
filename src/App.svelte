@@ -1,16 +1,16 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { theme, initializeTheme } from './lib/stores/theme';
-  import { currentPage } from './lib/stores/navigation';
+  import { onMount } from "svelte";
+  import { theme, initializeTheme } from "./lib/stores/theme";
+  import { currentPage } from "./lib/stores/navigation";
 
-  import ThemeController from './lib/components/ThemeController.svelte';
-  import Nav from './lib/components/Nav.svelte';
+  import ThemeController from "./lib/components/ThemeController.svelte";
+  import Nav from "./lib/components/Nav.svelte";
 
   // Pages
-  import HomePage from './lib/pages/HomePage.svelte';
-  import SettingsPage from './lib/pages/SettingsPage.svelte';
-  import HelpPage from './lib/pages/HelpPage.svelte';
-  import ComponentsDemo from './lib/pages/ComponentsDemo.svelte';
+  import HomePage from "./lib/pages/HomePage.svelte";
+  import SettingsPage from "./lib/pages/SettingsPage.svelte";
+  import HelpPage from "./lib/pages/HelpPage.svelte";
+  import ComponentsDemo from "./lib/pages/ComponentsDemo.svelte";
 
   onMount(() => {
     initializeTheme();
@@ -27,13 +27,13 @@
 
       <!-- Page Content -->
       <div class="max-w-4xl mx-auto">
-        {#if $currentPage === 'home'}
+        {#if currentPage === "home"}
           <HomePage />
-        {:else if $currentPage === 'settings'}
+        {:else if currentPage === "settings"}
           <SettingsPage />
-        {:else if $currentPage === 'help'}
+        {:else if currentPage === "help"}
           <HelpPage />
-        {:else if $currentPage === 'components'}
+        {:else if currentPage === "components"}
           <ComponentsDemo />
         {/if}
       </div>

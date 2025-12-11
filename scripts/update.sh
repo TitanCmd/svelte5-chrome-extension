@@ -7,5 +7,5 @@ set -e
 source "$(dirname "$0")/common.sh"
 
 print_status "Updating dependencies..."
-pnpm update
+bun update
 print_success "Dependencies updated!"

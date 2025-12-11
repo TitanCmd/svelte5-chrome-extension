@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { Coffee, Heart } from '../icons';
-  import Icon from './Icon.svelte';
+  import { Coffee, Heart } from "../icons";
+  import Icon from "./Icon.svelte";
 
   const currentYear = new Date().getFullYear();
 </script>
@@ -12,17 +12,17 @@
       <Icon icon={Heart} size={16} class="text-error animate-pulse" />
       <span
         >by <a
-          href="https://ko-fi.com/trentbrew"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
-          class="link link-hover font-semibold">Trent Brew</a
+          class="link link-hover font-semibold">Tristan Rogers</a
         ></span
       >
     </div>
     <div class="flex items-center gap-4 text-xs opacity-70 mt-2">
       <span>© {currentYear} • MIT License</span>
       <a
-        href="https://ko-fi.com/trentbrew"
+        href=""
         target="_blank"
         rel="noopener noreferrer"
         class="link link-hover flex items-center gap-1"

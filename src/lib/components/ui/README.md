@@ -5,6 +5,7 @@ Foundational DaisyUI components built for Svelte 5 with full TypeScript support.
 ## Components
 
 ### Button
+
 Flexible button component with multiple variants and sizes.
 
 ```svelte
@@ -34,6 +35,7 @@ Flexible button component with multiple variants and sizes.
 ```
 
 ### Card
+
 Container component for content sections.
 
 ```svelte
@@ -45,7 +47,7 @@ Container component for content sections.
   {#snippet children()}
     <p>Card content goes here</p>
   {/snippet}
-  
+
   {#snippet actions()}
     <Button variant="primary">Action</Button>
   {/snippet}
@@ -57,17 +59,18 @@ Container component for content sections.
 ```
 
 ### Input
+
 Form input component with validation states.
 
 ```svelte
 <script>
   import { Input } from '$lib/components/ui';
-  
+
   let email = $state('');
 </script>
 
-<Input 
-  type="email" 
+<Input
+  type="email"
   bind:value={email}
   placeholder="Enter email"
   primary
@@ -87,12 +90,13 @@ Form input component with validation states.
 ```
 
 ### Modal
+
 Dialog component for overlays.
 
 ```svelte
 <script>
   import { Modal, Button } from '$lib/components/ui';
-  
+
   let showModal = $state(false);
 </script>
 
@@ -102,7 +106,7 @@ Dialog component for overlays.
   {#snippet children()}
     <p>Modal content here</p>
   {/snippet}
-  
+
   {#snippet actions()}
     <Button onclick={() => showModal = false}>Close</Button>
   {/snippet}
@@ -110,6 +114,7 @@ Dialog component for overlays.
 ```
 
 ### Badge
+
 Small status indicator component.
 
 ```svelte
@@ -133,6 +138,7 @@ Small status indicator component.
 ```
 
 ### Alert
+
 Status message component with automatic icons.
 
 ```svelte
