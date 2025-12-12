@@ -117,7 +117,7 @@
   </div>
 
   <!-- Support the Developer -->
-  <div class="card bg-gradient-to-br from-orange-500 to-pink-500 text-white shadow-xl">
+  <div class="card bg-linear-to-br from-orange-500 to-pink-500 text-white shadow-xl">
     <div class="card-body items-center text-center">
       <div class="flex gap-2 items-center mb-2">
         <Icon icon={Coffee} size={32} />
@@ -128,7 +128,7 @@
         If you find this project helpful, consider buying me a coffee! Your support helps keep development going.
       </p>
       <a 
-        href="https://ko-fi.com/trentbrew" 
+        href="/" 
         target="_blank" 
         rel="noopener noreferrer"
         class="btn btn-lg bg-white text-orange-600 hover:bg-orange-50 border-none"

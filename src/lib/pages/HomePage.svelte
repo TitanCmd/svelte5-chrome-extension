@@ -17,7 +17,7 @@
 <div class="space-y-6">
   <!-- Hero Card -->
   <div
-    class="card bg-gradient-to-br from-primary to-secondary text-primary-content shadow-xl"
+    class="card bg-linear-to-br from-primary to-secondary text-primary-content shadow-xl"
   >
     <div class="card-body">
       <h2 class="card-title text-3xl">My Chrome Extension</h2>

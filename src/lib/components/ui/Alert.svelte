@@ -10,6 +10,13 @@
     children?: Snippet;
   }
 
+  const VARIANT_CLASS: Record<NonNullable<Props["variant"]>, string> = {
+    info: "alert-info",
+    success: "alert-success",
+    warning: "alert-warning",
+    error: "alert-error",
+  };
+
   let {
     variant = "info",
     class: className = "",
@@ -19,7 +26,7 @@
   }: Props = $props();
 
   const classes = $derived(
-    ["alert", `alert-${variant}`, className].filter(Boolean).join(" ")
+    ["alert", VARIANT_CLASS[variant], className].filter(Boolean).join(" ")
   );
 
   const iconMap = {

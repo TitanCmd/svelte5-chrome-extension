@@ -18,6 +18,25 @@
     children?: Snippet;
   }
 
+  const VARIANT_CLASS: Record<NonNullable<Props["variant"]>, string> = {
+    neutral: "badge-neutral",
+    primary: "badge-primary",
+    secondary: "badge-secondary",
+    accent: "badge-accent",
+    ghost: "badge-ghost",
+    error: "badge-error",
+    warning: "badge-warning",
+    info: "badge-info",
+    success: "badge-success",
+  };
+
+  const SIZE_CLASS: Record<NonNullable<Props["size"]>, string> = {
+    xs: "badge-xs",
+    sm: "badge-sm",
+    md: "badge-md",
+    lg: "badge-lg",
+  };
+
   let {
     variant = "neutral",
     size = "md",
@@ -30,9 +49,9 @@
   const classes = $derived(
     [
       "badge",
-      variant !== "neutral" && `badge-${variant}`,
+      VARIANT_CLASS[variant],
       outline && "badge-outline",
-      size !== "md" && `badge-${size}`,
+      SIZE_CLASS[size],
       className,
     ]
       .filter(Boolean)

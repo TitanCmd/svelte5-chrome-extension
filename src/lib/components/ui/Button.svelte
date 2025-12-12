@@ -27,6 +27,26 @@
     children?: Snippet;
   }
 
+  const VARIANT_CLASS: Record<NonNullable<Props["variant"]>, string> = {
+    neutral: "",
+    primary: "btn-primary",
+    secondary: "btn-secondary",
+    accent: "btn-accent",
+    ghost: "btn-ghost",
+    link: "btn-link",
+    error: "btn-error",
+    warning: "btn-warning",
+    info: "btn-info",
+    success: "btn-success",
+  };
+
+  const SIZE_CLASS: Record<NonNullable<Props["size"]>, string> = {
+    xs: "btn-xs",
+    sm: "btn-sm",
+    md: "btn-md",
+    lg: "btn-lg",
+  };
+
   let {
     variant = "neutral",
     size = "md",
@@ -47,9 +67,9 @@
   const classes = $derived(
     [
       "btn",
-      variant !== "neutral" && `btn-${variant}`,
+      VARIANT_CLASS[variant],
       outline && "btn-outline",
-      size !== "md" && `btn-${size}`,
+      SIZE_CLASS[size],
       wide && "btn-wide",
       block && "btn-block",
       circle && "btn-circle",

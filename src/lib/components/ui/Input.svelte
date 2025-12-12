@@ -21,6 +21,13 @@
     oninput?: (e: Event) => void;
   }
 
+  const SIZE_CLASS: Record<NonNullable<Props["size"]>, string> = {
+    xs: "input-xs",
+    sm: "input-sm",
+    md: "input-md",
+    lg: "input-lg",
+  };
+
   let {
     type = "text",
     value = $bindable(""),
@@ -56,7 +63,7 @@
       success && "input-success",
       warning && "input-warning",
       error && "input-error",
-      size !== "md" && `input-${size}`,
+      SIZE_CLASS[size],
       className,
     ]
       .filter(Boolean)

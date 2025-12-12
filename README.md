@@ -269,24 +269,8 @@ If you encounter any issues or bugs, please file an issue in the [GitHub reposit
 
 ---
 
-## ☕ Support
-
-If you find this project helpful, consider buying me a coffee!
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/trentbrew)
-
-[Support on Ko-fi](https://ko-fi.com/trentbrew) ❤️
-
----
-
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE.md).
 
 ---
-
-## 👨‍💻 Author
-
-**Trent Brew**
-- Ko-fi: [ko-fi.com/trentbrew](https://ko-fi.com/trentbrew)
-- GitHub: [@trentbrew](https://github.com/trentbrew)
