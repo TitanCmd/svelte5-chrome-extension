@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { navigateTo } from '../stores/navigation';
-  import Footer from '../components/Footer.svelte';
+  import { onMount } from "svelte";
+  import { navigateTo } from "../stores/navigation.svelte";
+  import Footer from "../components/Footer.svelte";
 
   let count = $state(0);
 
@@ -10,7 +10,7 @@
   }
 
   onMount(() => {
-    console.log('HomePage mounted');
+    console.log("HomePage mounted");
   });
 </script>
 
@@ -82,7 +82,7 @@
       <p>Test Svelte 5 reactivity with this simple counter.</p>
       <div class="flex items-center gap-4 mt-4">
         <button class="btn btn-primary" onclick={increment}
-          >{count + `${count == 1 ? ' click' : ' clicks'}`}</button
+          >{count + `${count == 1 ? " click" : " clicks"}`}</button
         >
         <button class="btn btn-outline btn-error" onclick={() => (count = 0)}>
           Reset
@@ -111,7 +111,7 @@
         <div class="card-actions justify-end">
           <button
             class="btn btn-sm btn-primary"
-            onclick={() => navigateTo('components')}
+            onclick={() => navigateTo("components")}
           >
             View Demo →
           </button>

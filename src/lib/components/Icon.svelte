@@ -9,7 +9,7 @@
   }
 
   let {
-    icon,
+    icon: IconComponent,
     size = 24,
     strokeWidth = 2,
     class: className = "",
@@ -17,10 +17,4 @@
   }: Props = $props();
 </script>
 
-<svelte:component
-  this={icon}
-  {size}
-  {strokeWidth}
-  class={className}
-  {...rest}
-/>
+<IconComponent {size} {strokeWidth} class={className} {...rest} />

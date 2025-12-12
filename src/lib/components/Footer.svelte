@@ -12,7 +12,7 @@
       <Icon icon={Heart} size={16} class="text-error animate-pulse" />
       <span
         >by <a
-          href=""
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
           class="link link-hover font-semibold">Tristan Rogers</a
@@ -22,7 +22,7 @@
     <div class="flex items-center gap-4 text-xs opacity-70 mt-2">
       <span>© {currentYear} • MIT License</span>
       <a
-        href=""
+        href="/"
         target="_blank"
         rel="noopener noreferrer"
         class="link link-hover flex items-center gap-1"

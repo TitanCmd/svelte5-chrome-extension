@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { theme, initializeTheme } from "./lib/stores/theme";
-  import { currentPage } from "./lib/stores/navigation";
+  import { currentPage } from "./lib/stores/navigation.svelte";
 
   import ThemeController from "./lib/components/ThemeController.svelte";
   import Nav from "./lib/components/Nav.svelte";
