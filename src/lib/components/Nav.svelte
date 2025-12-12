@@ -1,6 +1,6 @@
 <script lang="ts">
   import { MENU_ITEMS } from "../constants/menu";
-  import { currentPage } from "../stores/navigation";
+  import { navigationState } from "../stores/navigation.svelte";
   import Icon from "./Icon.svelte";
 
   function getPageForMenuItem(label: string): string {
@@ -13,7 +13,7 @@
 >
   <nav class="flex flex-row gap-4 justify-center">
     {#each MENU_ITEMS as item}
-      {@const isActive = getPageForMenuItem(item.label) === currentPage}
+      {@const isActive = getPageForMenuItem(item.label) === navigationState.currentPage}
       <button
         class="btn btn-ghost btn-square {isActive ? 'btn-active' : ''}"
         onclick={item.action}

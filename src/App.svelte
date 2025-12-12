@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { theme, initializeTheme } from "./lib/stores/theme";
-  import { currentPage } from "./lib/stores/navigation.svelte";
+  import { navigationState } from "./lib/stores/navigation.svelte";
 
   import ThemeController from "./lib/components/ThemeController.svelte";
   import Nav from "./lib/components/Nav.svelte";
@@ -27,13 +27,13 @@
 
       <!-- Page Content -->
       <div class="max-w-4xl mx-auto">
-        {#if currentPage === "home"}
+        {#if navigationState.currentPage === "home"}
           <HomePage />
-        {:else if currentPage === "settings"}
+        {:else if navigationState.currentPage === "settings"}
           <SettingsPage />
-        {:else if currentPage === "help"}
+        {:else if navigationState.currentPage === "help"}
           <HelpPage />
-        {:else if currentPage === "components"}
+        {:else if navigationState.currentPage === "components"}
           <ComponentsDemo />
         {/if}
       </div>

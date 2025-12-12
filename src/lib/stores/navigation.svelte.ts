@@ -1,8 +1,10 @@
 export type PageType = "home" | "settings" | "help" | "components";
 
-export let currentPage = $state<PageType>("home");
+export const navigationState = $state<{ currentPage: PageType }>({
+  currentPage: "home",
+});
 
 export function navigateTo(page: PageType) {
-  currentPage = page;
+  navigationState.currentPage = page;
   console.log("Navigated to:", page);
 }
