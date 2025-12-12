@@ -5,9 +5,9 @@
  */
 
 export {
-  Home,
+  House,
   Settings,
-  HelpCircle,
+  CircleQuestionMark,
   Moon,
   Sun,
   Menu,
