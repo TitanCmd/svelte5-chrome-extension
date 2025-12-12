@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { HelpCircle, Book, MessageCircle, ExternalLink, ChevronRight, Coffee, Heart } from '../icons';
+  import { CircleQuestionMark, Book, MessageCircle, ExternalLink, ChevronRight, Coffee, Heart } from '../icons';
   import Icon from '../components/Icon.svelte';
   
   const faqs = [
@@ -25,7 +25,7 @@
 <div class="space-y-6">
   <!-- Header -->
   <div class="flex items-center gap-3">
-    <Icon icon={HelpCircle} size={32} class="text-primary" />
+    <Icon icon={CircleQuestionMark} size={32} class="text-primary" />
     <div>
       <h1 class="text-3xl font-bold">Help & Support</h1>
       <p class="text-sm opacity-70">Get answers to your questions</p>
@@ -143,7 +143,7 @@
 
   <!-- Tips -->
   <div class="alert alert-info">
-    <Icon icon={HelpCircle} size={24} />
+    <Icon icon={CircleQuestionMark} size={24} />
     <div>
       <h3 class="font-bold">Pro Tip</h3>
       <div class="text-xs">Press <kbd class="kbd kbd-sm">Ctrl</kbd> + <kbd class="kbd kbd-sm">Shift</kbd> + <kbd class="kbd kbd-sm">H</kbd> to quickly open this help page!</div>

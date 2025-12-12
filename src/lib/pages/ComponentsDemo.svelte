@@ -1,7 +1,5 @@
 <script lang="ts">
   import { Button, Card, Input, Modal, Badge, Alert } from '../components/ui';
-  import Icon from '../components/Icon.svelte';
-  import { Home, Settings, Check, X, Info } from '../icons';
 
   let showModal = $state(false);
   let showConfirmDialog = $state(false);
