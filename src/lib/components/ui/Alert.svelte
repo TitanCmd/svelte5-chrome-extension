@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Snippet } from "svelte";
-  import { Info, AlertCircle, Check, X } from "../../icons";
+  import { Info, CircleAlert, Check, X } from "../../icons";
   import Icon from "../Icon.svelte";
 
   interface Props {
@@ -25,7 +25,7 @@
   const iconMap = {
     info: Info,
     success: Check,
-    warning: AlertCircle,
+    warning: CircleAlert,
     error: X,
   };
 </script>

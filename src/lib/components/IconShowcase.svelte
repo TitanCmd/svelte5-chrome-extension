@@ -1,28 +1,18 @@
 <script lang="ts">
   import Icon from "./Icon.svelte";
   import {
-    Home,
+    House,
     Settings,
-    HelpCircle,
-    Moon,
-    Sun,
-    Search,
-    Plus,
     Check,
-    AlertCircle,
+    CircleAlert,
     Info,
   } from "../icons";
 
   const icons = [
-    { component: Home, name: "Home" },
+    { component: House, name: "House" },
     { component: Settings, name: "Settings" },
-    { component: HelpCircle, name: "Help Circle" },
-    { component: Moon, name: "Moon" },
-    { component: Sun, name: "Sun" },
-    { component: Search, name: "Search" },
-    { component: Plus, name: "Plus" },
     { component: Check, name: "Check" },
-    { component: AlertCircle, name: "Alert Circle" },
+    { component: CircleAlert, name: "Circle Alert" },
     { component: Info, name: "Info" },
   ];
 </script>
@@ -45,7 +35,7 @@
 
   <div class="flex gap-4 items-center">
     {#each [16, 24, 32, 48] as size}
-      <Icon icon={Home} {size} />
+      <Icon icon={House} {size} />
     {/each}
   </div>
 
@@ -61,7 +51,7 @@
 
   <div class="flex gap-4 items-center">
     <Icon icon={Check} size={32} class="text-success" />
-    <Icon icon={AlertCircle} size={32} class="text-warning" />
+    <Icon icon={CircleAlert} size={32} class="text-warning" />
     <Icon icon={Info} size={32} class="text-info" />
   </div>
 </div>

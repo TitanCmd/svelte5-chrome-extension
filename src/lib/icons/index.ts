@@ -18,7 +18,7 @@ export {
   Plus,
   Minus,
   Check,
-  AlertCircle,
+  CircleAlert,
   Info,
   Bell,
   Volume2,
